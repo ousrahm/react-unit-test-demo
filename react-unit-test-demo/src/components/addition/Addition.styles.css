@@ -1,0 +1,34 @@
+#addition-h1 {
+    font-weight: bolder;
+    margin-bottom: 2%;
+    color: crimson;
+}
+
+.col {
+    text-align: center;
+}
+
+input {
+    color:crimson;
+    font-size: 10vh;
+    height: auto;
+    width: inherit;
+    text-align: center;
+    border: 1px gray solid;
+    border-radius: 10%;
+}
+
+.addition-text {
+    font-size: 10vh;
+}
+
+#addition-warning {
+    font-weight: bolder;
+    color: crimson;
+    font-size: larger;
+}
+
+#sum {
+    font-weight: bolder;
+    color: crimson;
+}
