@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Countries, { CountryName } from "../../components/countries/Countries";
 import { server } from "../../testServer";
 import { rest } from "msw";
