@@ -1,7 +1,7 @@
 # react-unit-test-demo
 
-This is the code used to demo how to Jest test React using Mock Service Worker.
+This is the code Oussama used to demo how to unit test React components using Jest, React Testing Library, and Mock Service Worker.
 
 ## Notes
 
-I used the API documented on (restcountries.com)[restcountries.com].
+Thanks to [restcountries.com](restcountries.com) for their free, easy to use API. 
