@@ -1,10 +1,4 @@
-import {
-  act,
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-} from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import Countries, { CountryName } from "../../components/countries/Countries";
 import { server } from "../../testServer";
 import { rest } from "msw";
@@ -76,12 +70,10 @@ describe("Countries component tests", () => {
     fireEvent.change(languageInput, { target: { value: "klingon" } });
     fireEvent.click(searchButton);
 
-    await waitFor(async () => {
-      const errorMessage = await screen.findByText(
-        "Uh oh! There was an issue retrieving your data. Make sure you spelled it correctly."
-      );
+    const errorMessage = await screen.findByText(
+      "Uh oh! There was an issue retrieving your data. Make sure you spelled it correctly."
+    );
 
-      expect(errorMessage).toBeInTheDocument();
-    });
+    expect(errorMessage).toBeInTheDocument();
   });
 });
