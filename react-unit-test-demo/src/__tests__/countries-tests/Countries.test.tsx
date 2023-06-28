@@ -30,9 +30,6 @@ describe("Countries component tests", () => {
     server.use(
       rest.get("https://restcountries.com/v3.1/lang/italian", (req, res, ctx) =>
         res(ctx.status(200), ctx.json(countryNames))
-      ),
-      rest.get("https://restcountries.com/v3.1/lang/klingon", (req, res, ctx) =>
-        res(ctx.status(400), ctx.json(countryNames))
       )
     );
 

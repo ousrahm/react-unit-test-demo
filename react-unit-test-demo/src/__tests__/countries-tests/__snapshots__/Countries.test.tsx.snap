@@ -14,7 +14,7 @@ exports[`Countries component tests matches snapshot 1`] = `
       <h4
         class="instructions"
       >
-        Enter the name of a language and press Search to retrieve a list of countries that speak this language.
+        Enter the name of a language and press Search to retrieve a list of countries with that as their official language.
       </h4>
       <div
         class="container"

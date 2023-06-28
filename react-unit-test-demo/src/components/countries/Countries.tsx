@@ -38,7 +38,7 @@ const Countries = (): JSX.Element => {
       <h2 className={styles.heading}>Countries By Language</h2>
       <h4 className={styles.instructions}>
         Enter the name of a language and press Search to retrieve a list of
-        countries that speak this language.
+        countries with that as their official language.
       </h4>
       <Container>
         <Row>
