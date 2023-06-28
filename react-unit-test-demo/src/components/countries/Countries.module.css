@@ -1,0 +1,39 @@
+.heading {
+  font-weight: bolder;
+  margin-bottom: 2%;
+  color: mediumblue;
+}
+
+.instructions {
+  color: mediumblue;
+  margin-bottom: 2%;
+}
+
+.list {
+  margin: 1%;
+  list-style-type: circle;
+}
+
+.languageInput {
+  margin-right: 2%;
+  width: inherit;
+  height: 6vh;
+  font-size: 4vh;
+  text-align: center;
+  color: mediumblue;
+}
+
+.button {
+  background-color: mediumblue;
+  border-color: mediumblue;
+  font-size: 2vh
+}
+
+.error {
+  color: crimson;
+  margin-top: 5%;
+}
+
+.languageSearchRow {
+  margin-top: 10%;
+}

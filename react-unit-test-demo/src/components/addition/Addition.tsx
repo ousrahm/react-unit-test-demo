@@ -1,5 +1,5 @@
 import React from "react";
-import "./Addition.styles.css";
+import styles from "./Addition.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Addition = (): JSX.Element => {
@@ -12,44 +12,46 @@ const Addition = (): JSX.Element => {
   }, [addend1, addend2]);
 
   return (
-    <>
-      <h1 id="addition-h1">Addition Component</h1>
+    <div>
+      <h2 className={styles.heading}>Addition Component</h2>
       <Container>
         <Row>
-          <Col>
+          <Col className={styles.column}>
             <input
+              id="addend1"
+              className={styles.input}
               type="number"
-              defaultValue={addend1}
+              defaultValue={addend1.toString()}
               onChange={(e) => setAddend1(parseInt(e.target.value, 10))}
             />
           </Col>
-          <Col>
-            <span className="addition-text">+</span>
+          <Col className={styles.column}>
+            <span className={styles.text}>+</span>
           </Col>
-          <Col>
+          <Col className={styles.column}>
             <input
+              id="addend2"
+              className={styles.input}
               type="number"
-              defaultValue={addend2}
+              defaultValue={addend2.toString()}
               onChange={(e) => setAddend2(parseInt(e.target.value, 10))}
             />
           </Col>
-          <Col>
-            <span className="addition-text">=</span>
+          <Col className={styles.column}>
+            <span className={styles.text}>=</span>
           </Col>
-          <Col>
+          <Col className={styles.column}>
             {isNaN(sum) ? (
-              <span id="addition-warning">
+              <span className={styles.warning}>
                 Please enter a value in both inputs.
               </span>
             ) : (
-              <span className="addition-text" id="sum">
-                {sum}
-              </span>
+              <span className={styles.sum}>{sum}</span>
             )}
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

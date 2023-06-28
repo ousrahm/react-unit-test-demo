@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries component tests matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="Countries"
+    >
+      <h2
+        class="heading"
+      >
+        Countries By Language
+      </h2>
+      <h4
+        class="instructions"
+      >
+        Enter the name of a language and press Search to retrieve a list of countries that speak this language.
+      </h4>
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col"
+          >
+            <ul
+              class="list"
+            />
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="languageSearchRow row"
+            >
+              <input
+                class="languageInput form-control"
+                placeholder="language here!"
+                type="text"
+              />
+              <button
+                class="button btn btn-primary"
+                type="button"
+              >
+                Search
+              </button>
+            </div>
+            <div
+              class="error row"
+            >
+              <span />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
